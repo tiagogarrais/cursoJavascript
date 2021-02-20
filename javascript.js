@@ -19,7 +19,7 @@ let acoes = [
 let bebidas = [
     'cachaça amarela e ainda chama de "meu ouro".',
     'cerveja gelada do boteco de esquina',
-    'cerveja puro malte do supermercado e afirma: <br> --É mais barata do que no bar!',
+    'cerveja puro malte do supermercado: <br> --É mais barato que no bar!',
     'cachaça bruta',
     'Vodka, gelo e limão',
     'gin tônica com limão e hortelã. A cara da riqueza!',
@@ -63,11 +63,5 @@ mes = document.getElementById('mes')
 // Criando uma função para gerar o resultado
 function gerarRelatorio(){
     const resultadoTela = document.getElementById('resultado')
-    resultadoTela.innerHTML = (`${nome.value} ${acoes[mes.value]} ${bebidas[dia.value]}`)   
+    resultadoTela.innerHTML = (`${nome.value} ${acoes[mes.value]} ${bebidas[Number.parseInt(dia.value)]}`)   
 }
-
-
-
-
-
-
