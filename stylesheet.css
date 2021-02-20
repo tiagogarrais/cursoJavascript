@@ -4,5 +4,17 @@ body {
     font-family: monospace;
     text-align: center;
     font-size: 1.1rem;
+    padding: 10pt;
+
 }
 
+#resultado{
+    background-color: rgb(33, 247, 33);
+    color: rgb(0, 0, 0);
+    font-family: monospace;
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 5pt;
+    padding: 15pt;
+    border-radius: 8pt;
+}

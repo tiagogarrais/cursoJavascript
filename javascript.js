@@ -1,81 +1,71 @@
-// Capturar o nome do usuário
-let nome = prompt("Digite seu nome")
-// let nome = 'Julia'
-
-//Capturar dia de nascimento
-let diaNascimento = prompt("Digite o dia do seu nascimento")
-// let diaNascimento = 2
-
-//Capturar mês de Nascimento
-let mesNascimento = prompt("Digite o mês do seu nascimento")
-// let mesNascimento = 5
-
 //Array de 12 ações
 let acoes = [
-    'Gosta mesmo é de ',
-    'Aprecia ',
-    'Dá um valor danado para ',
-    'Vive bebendo ',
-    'Só sabe pedir ',
-    'Seca todos os copos de ',
-    'Seca todos os copos de ',
-    'Seca todos os copos de ',
-    'Seca todos os copos de ',
-    'Seca todos os copos de ',
-    'Seca todos os copos de ',
-    'Seca todos os copos de '
+    'gosta mesmo é de ',
+    'aprecia ',
+    'dá um valor danado para ',
+    'vive bebendo ',
+    'só sabe pedir ',
+    'não se contém quando bebe ',
+    'fica rico e valente quando bebe ',
+    'seca todos os copos de ',
+    'seca todos os copos de ',
+    'seca todos os copos de ',
+    'seca todos os copos de ',
+    'seca todos os copos de '
 ]
 
 
 // Criando um Array de 31 bebidas
 let bebidas = [
-    'Ypióca ouro',
-    'Kayser',
-    'Brahma duplo malte',
+    'cachaça amarela e ainda chama de "meu ouro".',
+    'cerveja gelada do boteco de esquina',
+    'cerveja puro malte do supermercado e afirma: <br> --É mais barata do que no bar!',
     'cachaça bruta',
-    'Tekila com sal e limão',
-    'Tekila com sal e limão',
-    'Tekila com sal e limão',
-    'Tekila com sal e limão',
-    'Tekila com sal e limão',
-    'Tekila com sal e limão',
-    'Tekila com sal e limão',
-    'Tekila com sal e limão',
-    'Tekila com sal e limão',
-    'Tekila com sal e limão',
-    'Tekila com sal e limão',
-    'Tekila com sal e limão',
-    'Tekila com sal e limão',
-    'Tekila com sal e limão',
-    'Tekila com sal e limão',
-    'Tekila com sal e limão',
-    'Tekila com sal e limão',
-    'Tekila com sal e limão',
-    'Tekila com sal e limão',
-    'Tekila com sal e limão',
-    'Tekila com sal e limão',
-    'Tekila com sal e limão',
-    'Tekila com sal e limão',
-    'Tekila com sal e limão',
-    'Tekila com sal e limão',
-    'Tekila com sal e limão',
-    'Tekila com sal e limão'
+    'Vodka, gelo e limão',
+    'gin tônica com limão e hortelã. A cara da riqueza!',
+    'cachaça com gasolina e acetona.<br> Não façam isso em casa!',
+    'mijo de jumenta parida!',
+    'veneno de cobra cascavel',
+    'Tekila com sal e limão!',
+    'Tekila com sal e limão!',
+    'Tekila com sal e limão!',
+    'Tekila com sal e limão!',
+    'Tekila com sal e limão!',
+    'Tekila com sal e limão!',
+    'Tekila com sal e limão!',
+    'Tekila com sal e limão!',
+    'Tekila com sal e limão!',
+    'Tekila com sal e limão!',
+    'Tekila com sal e limão!',
+    'Tekila com sal e limão!',
+    'Tekila com sal e limão!',
+    'Tekila com sal e limão!',
+    'Tekila com sal e limão!',
+    'Tekila com sal e limão!',
+    'Tekila com sal e limão!',
+    'Tekila com sal e limão!',
+    'Tekila com sal e limão!',
+    'Tekila com sal e limão!',
+    'Tekila com sal e limão!',
+    'Tekila com sal e limão!'
     ]
+
+// Capturar o nome do usuário
+nome = document.getElementById('nome')
+
+//Capturar dia de nascimento
+dia = document.getElementById('dia')
+
+//Capturar mês de Nascimento
+mes = document.getElementById('mes')
 
 
 // Criando uma função para gerar o resultado
 function gerarRelatorio(){
-    // console.log(nome),
-    // console.log(acoes[Number.parseInt(mesNascimento)]),
-    // console.log(bebidas[Number.parseInt(diaNascimento)])
-
     const resultadoTela = document.getElementById('resultado')
-    resultadoTela.innerHTML = (`${nome} ${acoes[Number.parseInt(mesNascimento)]} ${bebidas[Number.parseInt(diaNascimento)]} `)
-    
+    resultadoTela.innerHTML = (`${nome.value} ${acoes[mes.value]} ${bebidas[dia.value]}`)   
 }
 
-//Chamando a função
-gerarRelatorio()
 
 
 

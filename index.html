@@ -7,15 +7,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
-
-
     <title>Descubra quem é você no boteco</title>
-
 </head>
 
 <body>
     <h1>Descubra quem é você dentro do boteco</h1>
 
+        <fieldset id="formulario">
+            <label for="nome">Seu nome no boteco
+                <input 
+                    type="text" 
+                    name="nome" 
+                    id="nome" 
+                    placeholder="Como você é conhecido?"
+                    autocomplete="name"
+                    autofocus
+                >
+            </label>
+            <br>
+            <label for="inputDia">Dia do aniversário
+                <input 
+                    type="number" 
+                    name="inputDia" 
+                    id="dia" 
+                    placeholder="apenas o número"
+                >
+                    
+            </label>
+            <br>
+            <br>
+            <label for="mes">Mês
+                <select name="mes" id="mes">
+                    <option value=".">Escolha um item</option>
+                    <option value="0">Janeiro</option>
+                    <option value="1">Fevereiro</option>
+                    <option value="2">Março</option>
+                    <option value="3">Abril</option>
+                    <option value="4">Maio</option>
+                    <option value="5">Junho</option>
+                    <option value="6">Julho</option>
+                    <option value="7">Agosto</option>
+                    <option value="8">Setembro</option>
+                    <option value="9">Outubro</option>
+                    <option value="10">Novembro</option>
+                    <option value="11">Dezembro</option>
+                </select>
+                  
+            </label>
+            <br>
+            <br>
+            <button onclick="gerarRelatorio()">Enviar >></button>
+        </fieldset>
 
     <div id=resultado>
 
