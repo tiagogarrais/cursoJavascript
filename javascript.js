@@ -7,11 +7,11 @@ let acoes = [
     'só sabe pedir ',
     'não se contém quando bebe ',
     'fica rico e valente quando bebe ',
-    'seca todos os copos de ',
-    'seca todos os copos de ',
-    'seca todos os copos de ',
-    'seca todos os copos de ',
-    'seca todos os copos de '
+    'vira outra pessoa se beber ',
+    'precisa ser levado pra casa quando bebe ',
+    'fica todo feliz se oferecerem um pouco de ',
+    'bebe fácil um litro de ',
+    'usa taça de cristal pra beber '
 ]
 
 
